@@ -38,7 +38,7 @@ A random walk is a formalization of a path that consists of a succession of rand
 
 ![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2-1.png) 
 
-You can see, that for the 3thd experiment (green) linear regression explains data from from 0 till 700 very good, by fail explain the "future" data after 700
+You can see, that  linear regression for the 3thd experiment (green)explains data from from 0 till 700 very good, but it fails to explain the "future" data after 700
 
 --- .class #id 
 
@@ -50,7 +50,7 @@ https://goodok.shinyapps.io/random_walk_app
 (Please, don't use more than 8 hours, becouse it's restriction of the free hosting)
 
 ### Why simple regression models do not works?
-In fact, time series is not set of Independent and Identically Distributed random variables values.
+In fact, time series are not a sets of Independent and Identically Distributed random variables values.
 
 ### Credits
 
