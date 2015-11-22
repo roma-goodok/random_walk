@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Gaussian Random Walk simulation to show how we can blinded</title>
   <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Gaussian Random Walk simulation to show how we can blinded">
+  <meta name="author" content="Roman G.">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -32,9 +32,9 @@
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
-    <h1></h1>
-    <h2></h2>
-    <p><br/></p>
+    <h1>Gaussian Random Walk simulation to show how we can blinded</h1>
+    <h2>Course Project of &quot;Development Data Product&quot; at http://coursera.org</h2>
+    <p>Roman G.<br/></p>
   </hgroup>
   <article></article>  
 </slide>
@@ -43,14 +43,16 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Read-And-Delete</h2>
+    <h2>Introduction</h2>
   </hgroup>
   <article data-timings="">
-    <ol>
-<li>Edit YAML front matter</li>
-<li>Write using R Markdown</li>
-<li>Use an empty line followed by three dashes to separate slides!</li>
-</ol>
+    <p>This study is implemented  as a Course Project of <a href="https://www.coursera.org/course/devdataprod">&quot;Development Data Product&quot; course</a> taught by <em>Brian Caffo, PhD</em> at <a href="http://coursera.org">http://coursera.org</a>    </p>
+
+<p>It is an illustration of how we can blinded by optimizm appllying some regression models (that seems are good for past data)  to forecast time series from the future.</p>
+
+<p>For example, after watching stock price time series, sometimes we can &quot;feel&quot; that discovered some &quot;market laws&quot;  and trends, but in fact it is very hard to forecast real-world time series data such as financial markets. </p>
+
+<p>I have decided to simulate some very simple stochastic process and I am going to show, that simple linear regression model does not work. As an others models it can explain past data very good, but it is illusion that it explain all time series.</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -58,10 +60,49 @@
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Slide 2</h2>
+    <h2>What is Gaussian Random Walk</h2>
   </hgroup>
   <article data-timings="">
-    
+    <p>A random walk is a formalization of a path that consists of a succession of random steps. Shortly, it can be implemented by the following formula:  <strong>next position = prior position + some random step</strong>.  A <em>Gaussion Random Walk</em> having a step size that varies according to a normal distribution is used.</p>
+
+<p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Illusion of trends</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"> </p>
+
+<p>You can see, that for the 3thd experiment (green) linear regression explains data from from 0 till 700 very good, by fail explain the &quot;future&quot; data after 700</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Demo Application</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>You can play with application, that simulates random walk procees, using the following link:<br>
+<a href="https://goodok.shinyapps.io/random_walk_app">https://goodok.shinyapps.io/random_walk_app</a><br>
+(Please, don&#39;t use more than 8 hours, becouse it&#39;s restriction of the free hosting)</p>
+
+<h3>Why simple regression models do not works?</h3>
+
+<p>In fact, time series is not set of Independent and Identically Distributed random variables values.</p>
+
+<h3>Credits</h3>
+
+<p>This slides were produced under
+R version 3.2.1 (2015-06-18)<br>
+OS Version: Linux, 3.13.0-55-generic</p>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -72,14 +113,26 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Read-And-Delete'>
+        data-slide=1 title='Introduction'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Slide 2'>
+        data-slide=2 title='What is Gaussian Random Walk'>
          2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Illusion of trends'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Demo Application'>
+         4
       </a>
     </li>
   </ul>
