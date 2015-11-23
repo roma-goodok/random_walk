@@ -43,7 +43,7 @@ A random walk is a formalization of a path that consists of a succession of rand
 
 ![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2-1.png) 
 
-You can see, that  linear regression for the 3thd experiment (green)explains data from from 0 till 700 very good, but it fails to explain the "future" data after 700
+You can see, that  linear regression for the 3thd experiment (green)explains data from  0 till 700 very good, but it fails to explain the "future" data after 700
 
 --- .class #id 
 
