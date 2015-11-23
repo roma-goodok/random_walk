@@ -136,12 +136,12 @@ You can see, that  linear regression for the 3thd experiment (green)explains dat
 
 ## Demo Application
 
-You can play with application, that simulates random walk procees, using the following link:  
+You can play with application, that simulates random walk process, using the following link:  
 https://goodok.shinyapps.io/random_walk_app  
-(Please, don't use more than 8 hours, becouse it's restriction of the free hosting)
+(Please, don't use more than 8 hours, because it's restriction of the free hosting)
 
 ### Why simple regression models do not works?
-In fact, time series are not a sets of Independent and Identically Distributed random variables values.
+In fact, time series are not a sets of Independent and Identically Distributed random values .
 
 ### Credits
 
