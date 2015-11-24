@@ -1,5 +1,5 @@
 ---
-title       : Gaussian Random Walk simulation to show how we can blinded
+title       : Gaussian Random Walk simulation to show how we can be blinded
 subtitle    : Course Project of "Development Data Product" at http://coursera.org
 author      : Roman G.
 job         : 
@@ -30,20 +30,15 @@ I have decided to simulate some very simple stochastic process and I am going to
 
 A random walk is a formalization of a path that consists of a succession of random steps. Shortly, it can be implemented by the following formula:  **next position = prior position + some random step**.  A *Gaussion Random Walk* having a step size that varies according to a normal distribution is used.
 
-![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1-1.png) 
+![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1-1.png) 
 
 --- .class #id 
 
 ## Illusion of trends
 
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png) 
 
-```
-## Error in do.call("layer", list(mapping = mapping, data = data, stat = stat, : не могу найти функцию "arrow"
-```
-
-![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2-1.png) 
-
-You can see, that  linear regression for the 3thd experiment (green)explains data from  0 till 700 very good, but it fails to explain the "future" data after 700
+You can see, that  linear regression for the 3thd experiment (green) explains data from  0 till 700 very good, but it fails to explain the "future" data after 700
 
 --- .class #id 
 

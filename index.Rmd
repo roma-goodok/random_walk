@@ -1,5 +1,5 @@
 ---
-title       : Gaussian Random Walk simulation to show how we can blinded
+title       : Gaussian Random Walk simulation to show how we can be blinded
 subtitle    : Course Project of "Development Data Product" at http://coursera.org
 author      : Roman G.
 job         : 
@@ -26,6 +26,8 @@ opts_chunk$set(echo = FALSE
 
 # libraries:
 library(ggplot2)
+library(dplyr)
+library(grid)
 ```
 ## Introduction
 
@@ -129,7 +131,7 @@ A random walk is a formalization of a path that consists of a succession of rand
 
 ```
 
-You can see, that  linear regression for the 3thd experiment (green)explains data from  0 till 700 very good, but it fails to explain the "future" data after 700
+You can see, that  linear regression for the 3thd experiment (green) explains data from  0 till 700 very good, but it fails to explain the "future" data after 700
 
 --- .class #id 
 
